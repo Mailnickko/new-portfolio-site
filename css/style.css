@@ -1,0 +1,515 @@
+@import url(https://fonts.googleapis.com/css?family=Courgette|Russo+One|Bree+Serif);
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    max-width: 70px;
+    border-color: #f05f40;
+    border-width: 3px;
+}
+
+hr.light {
+    border-color: #fff;
+}
+
+a {
+    color: #f05f40;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: #eb3812;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+header:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    padding-bottom: 10px;
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), url("../img/laday.png");
+    background-size: 100% 100%;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+footer {
+    width: 100%;
+    min-height: 150px;
+    background-color: #333333;
+    color: #ffffff;
+    margin-bottom: -10px;
+}
+
+footer h3 {
+    padding: 10px 0 10px 30px;
+}
+
+footer h5 {
+    padding: 15px 0 0 30px;
+}
+
+header .header-content {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+@media(max-width:449px) {
+
+    .header-content-inner h2 {
+        padding: 7px 40px;
+    }
+
+    .header-content-inner {
+        padding: 5px 0 30px;
+    }
+
+    .lamp, .mean, .ror {
+        margin: 60px 0 20px;
+    }
+}
+
+@media(min-width:450px) {
+    .header-content-inner {
+        padding: 10px 0 40px;
+    }
+
+    .header-content-inner h2 {
+        padding: 7px 80px;
+    }
+
+    .lamp, .mean, .ror {
+        margin: 80px 0 50px;
+    }
+}
+
+
+.row {
+    margin: 0;
+}
+
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+header .header-content .header-content-inner p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+}
+
+header .headshot {
+    border-radius: 15px;
+    width: 150px;
+    max-height: 250px;
+    margin-bottom: 20px;
+    -webkit-animation-duration: .8s;
+}
+
+header .header-content-inner h2 {
+    animation: fallIn .7s .3s linear backwards;
+    font-family: 'Russo One', sans-serif;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    border: 7px solid #000000;
+    color: #000000;
+    display: inline-block;
+}
+
+header .header-content-inner p{
+    font-size: 20px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.my-links {
+    text-align: center;
+    background-color: #f2ede4;
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+}
+
+.my-links img{
+    max-width: 50px;
+    margin: 20px 0 20px 0;
+}
+
+.my-links span {
+    display: none;
+    text-decoration: none;
+}
+
+.my-links a:hover {
+    background-color: #f05f40;
+}
+
+.my-links a:hover span {
+    display: block;
+    color: #ffffff;
+}
+
+.my-links a:hover img {
+    margin: 20px 0 0 0;
+    animation: boop 0.3s forwards;
+}
+
+.zoomInUp {
+    -webkit-animation-delay: .5s;
+}
+
+.github {
+    -webkit-animation-delay: .4s;
+}
+
+.linkedin {
+    -webkit-animation-delay: .5s;
+}
+
+.about {
+    -webkit-animation-delay: .6s;
+}
+
+.contact {
+    -webkit-animation-delay: .7s;
+}
+
+#skills, #work, #about {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.about-wrapper {
+    border: 2px solid black;
+    padding: 50px 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#skills hr, #work hr, #about hr {
+    padding-bottom: 20px;
+}
+
+#skills h1, #work h1, #about h1 {
+    font-family: 'Courgette', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#work a {
+    cursor: pointer
+}
+
+#work img {
+    border: 1px solid black;
+}
+
+
+
+figure.project figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(72,76,97,1) 0%, rgba(72,76,97,0.8) 75%);
+    background: linear-gradient(to bottom, rgba(72,76,97,1) 0%, rgba(72,76,97,0.8) 75%);
+    content: '';
+    opacity: 0;
+}
+
+figure.project h3 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #484c61;
+    -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+    transition: transform 0.35s, color 0.35s;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+    opacity: 0;
+}
+
+figure.project figcaption::before,
+figure.project h4 , figure.project h3 {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.project h4 {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translate3d(0,10px,0);
+    transform: translate3d(0,10px,0);
+}
+
+figure.project:hover h3 {
+    color: #fff;
+    opacity: 1;
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+    transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.project:hover figcaption::before ,
+figure.project:hover h4 {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.work-samples-top {
+    padding-top: 80px;
+    background-color: #f2ede4;
+    -webkit-box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.8);
+}
+
+.work-samples-mid {
+    background-color: #f2ede4;
+    -webkit-box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.8);
+}
+
+.work-samples-bottom {
+    padding-bottom: 80px;
+    background-color: #f2ede4;
+    -webkit-box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.8);
+}
+
+.skill-sets {
+    background-color: #f2ede4;
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+}
+
+.skill-sets img {
+    max-width: 240px;
+}
+
+.first-col, .second-col {
+    padding-bottom: 40px;
+}
+
+
+.lamp ul, .mean ul, .ror ul{
+    margin-top: 20px;
+    font-family: 'Bree+Serif', sans-serif;
+    font-size: 20px;
+}
+
+.skill-sets .toolbox-divider {
+    min-width: 80%;
+    border-color: #bbbbbb;
+    border-width: 2px;
+    text-align: center;
+}
+
+.bottom-skills {
+    margin-bottom: 60px;
+}
+.bottom-skills h4 {
+    padding: 12px;
+}
+
+
+.bar {
+    min-height: 13px;
+    margin-left: 3%;
+    background-color: #dddddd;
+    border-radius: 20px;
+}
+
+.score1, .score2, .score3, .score4, .score5, .score6, .score7, .score8, .score9, .score10  {
+    min-height: 13px;
+    border-radius: 20px;
+    transition: width 1s;
+    -moz-transition: width 1s; /* Firefox 4 */
+    -webkit-transition: width 1s; /* Safari and Chrome */
+    -o-transition: width 1s; /* Opera */
+    -ms-transition: width 1s; /* IE9 (maybe) */
+}
+
+.goseven {
+    width: 0px;
+    background: #f05f40;
+    -webkit-animation: graphItSeventy 2s ease-out forwards;
+       -moz-animation: graphItSeventy 2s ease-out forwards;
+        -ms-animation: graphItSeventy 2s ease-out forwards;
+         -o-animation: graphItSeventy 2s ease-out forwards;
+            animation: graphItSeventy 2s ease-out forwards;
+}
+
+.goeight {
+    width: 0px;
+    background: #f05f40;
+    -webkit-animation: graphItEighty 2s ease-out forwards;
+       -moz-animation: graphItEighty 2s ease-out forwards;
+        -ms-animation: graphItEighty 2s ease-out forwards;
+         -o-animation: graphItEighty 2s ease-out forwards;
+            animation: graphItEighty 2s ease-out forwards;
+}
+
+.gonine {
+    width: 0px;
+    background: #f05f40;
+    -webkit-animation: graphItNinety 2s ease-out forwards;
+       -moz-animation: graphItNinety 2s ease-out forwards;
+        -ms-animation: graphItNinety 2s ease-out forwards;
+         -o-animation: graphItNinety 2s ease-out forwards;
+            animation: graphItNinety 2s ease-out forwards;
+}
+
+.goten {
+    width: 0px;
+    background: #f05f40;
+    -webkit-animation: graphItHundred 2s ease-out forwards;
+       -moz-animation: graphItHundred 2s ease-out forwards;
+        -ms-animation: graphItHundred 2s ease-out forwards;
+         -o-animation: graphItHundred 2s ease-out forwards;
+            animation: graphItHundred 2s ease-out forwards;
+}
+.label {
+    transition: padding 0.1s ease
+}
+.label:hover {
+    background-color: #eb3812;
+    padding: .3em .6em .4em;
+
+}
+
+.languages h2, .methods h2, .supplemental h2 {
+    font-family: 'Russo One', sans-serif;
+}
+
+.languages li, .methods li, .supplemental li {
+    font-family: 'Bree+Serif', sans-serif;
+    line-height: 25px;
+}
+
+.copyright {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+
+}
+
+.who p, .what p {
+    padding: 10px 10px 0;
+    text-align: justify;
+    font-size: 18px;
+    text-indent: 50px;
+}
+
+.who h2, .what h2 {
+    padding-bottom: 10px;
+    font-family: 'Russo One', sans-serif;
+    color: #2f5653;
+}
+
+@keyframes fallIn {
+    0% {
+        transform: translateY(-400px);
+    }
+    70% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes boop {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-7px);
+    }
+}
+
+@keyframes graphItSeventy {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+@keyframes graphItEighty {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes graphItNinety {
+    0% {
+        width: px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes graphItHundred {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
