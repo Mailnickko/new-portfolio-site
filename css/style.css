@@ -83,9 +83,9 @@ header .header-content {
 
 @media(max-width:449px) {
 
-    .header-content-inner h2 {
-        padding: 7px 40px;
-    }
+    // .header-content-inner h2 {
+    //     padding: 7px 40px;
+    // }
 
     .header-content-inner {
         padding: 5px 0 30px;
@@ -101,9 +101,9 @@ header .header-content {
         padding: 10px 0 40px;
     }
 
-    .header-content-inner h2 {
-        padding: 7px 80px;
-    }
+    // .header-content-inner h2 {
+    //     padding: 7px 80px;
+    // }
 
     .lamp, .mean, .ror {
         margin: 80px 0 50px;
@@ -136,13 +136,15 @@ header .headshot {
 header .header-content-inner h2 {
     animation: fallIn .7s .3s linear backwards;
     font-family: 'Russo One', sans-serif;
-    padding-top: 20px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 40px;
+    padding: 20px 30px;
     border: 7px solid #000000;
     color: #000000;
     display: inline-block;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header .header-content-inner p{
