@@ -83,10 +83,6 @@ header .header-content {
 
 @media(max-width:449px) {
 
-    // .header-content-inner h2 {
-    //     padding: 7px 40px;
-    // }
-
     .header-content-inner {
         padding: 5px 0 30px;
     }
@@ -100,10 +96,6 @@ header .header-content {
     .header-content-inner {
         padding: 10px 0 40px;
     }
-
-    // .header-content-inner h2 {
-    //     padding: 7px 80px;
-    // }
 
     .lamp, .mean, .ror {
         margin: 80px 0 50px;
@@ -250,7 +242,7 @@ figure.project figcaption::before {
 
 figure.project h3 {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 0;
     width: 100%;
     color: #484c61;
@@ -262,14 +254,14 @@ figure.project h3 {
 }
 
 figure.project figcaption::before,
-figure.project h4 , figure.project h3 {
+figure.project h4 , figure.project h3, figure.project .githubLogo {
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
 }
 
 figure.project h4 {
     position: absolute;
-    bottom: 60px;
+    top: 35%;
     left: 0;
     padding: 2em;
     width: 100%;
